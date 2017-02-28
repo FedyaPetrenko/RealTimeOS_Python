@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Laba1", "Laba1\Laba1.pyproj", "{12541A83-CA15-4DD7-B754-EF03DCC2364A}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Laba2", "Laba2\Laba2.pyproj", "{DFB560F9-C408-4E34-B6F5-8117DCF321CC}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Laba3", "Laba3\Laba3.pyproj", "{B22099D2-7348-4FD4-B18E-13357BBE3595}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12541A83-CA15-4DD7-B754-EF03DCC2364A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12541A83-CA15-4DD7-B754-EF03DCC2364A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB560F9-C408-4E34-B6F5-8117DCF321CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB560F9-C408-4E34-B6F5-8117DCF321CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22099D2-7348-4FD4-B18E-13357BBE3595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22099D2-7348-4FD4-B18E-13357BBE3595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
