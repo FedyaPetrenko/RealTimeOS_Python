@@ -22,7 +22,65 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\Person.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Abstracts\Transport.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\BaseDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PlaneDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PlaneTypeDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\PositionDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\RaceDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\TicketDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\WorkerDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\UnitOfWork.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Concrete\Crew.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Concrete\Plane.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Concrete\PlaneType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Concrete\Position.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Concrete\Race.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Concrete\Ticket.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Concrete\Worker.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Laba3.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstracts\" />
+    <Folder Include="Concrete\" />
+    <Folder Include="Data\" />
+    <Folder Include="DAO\" />
+    <Folder Include="Tests\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
