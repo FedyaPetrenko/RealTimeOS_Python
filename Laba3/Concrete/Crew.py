@@ -1,9 +1,11 @@
+from Worker import Worker
+
 class Crew(object):
     def __init__(self):
         self._crewId = None
-        self._worker1 = None
-        self._worker2 = None
-        self._worker3 = None           
+        self._worker1 = Worker()
+        self._worker2 = Worker()
+        self._worker3 = Worker()           
         
     @property
     def crewId(self):

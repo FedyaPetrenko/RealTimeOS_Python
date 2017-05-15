@@ -16,7 +16,7 @@ class Person(object):
         """стать"""
 
     @abstractproperty
-    def adress(self):
+    def address(self):
         """адреса"""
 
     @abstractproperty
@@ -25,22 +25,6 @@ class Person(object):
 
     @abstractproperty
     def passport(self):
-        """серія і номер паспорта"""
-
-    @abstractmethod
-    def load(self):
-        """вибрати об'єкти з БД"""
-
-    @abstractmethod
-    def save(self):
-        """зберегти або оновити об'єкт в БД"""
-
-    @abstractmethod
-    def _update(self):
-        """оновити запис"""
-        
-    @abstractmethod
-    def delete(self):
-        """видалити записи про об'єкт з БД"""
+        """серія і номер паспорта"""   
 
 

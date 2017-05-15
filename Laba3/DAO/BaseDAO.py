@@ -16,7 +16,7 @@ class BaseDAO(object):
         """зберегти новий запис"""
 
     @abstractmethod
-    def _update(self, entity):
+    def update(self, entity):
          """оновити запис у таблиці"""
 
     @abstractmethod
