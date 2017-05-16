@@ -31,6 +31,9 @@
     <Compile Include="DAO\BaseDAO.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DAO\CrewDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DAO\PlaneDAO.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +50,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DAO\WorkerDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Manager.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Data\UnitOfWork.py">
