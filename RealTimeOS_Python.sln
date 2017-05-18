@@ -11,6 +11,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Laba3", "Laba3\Laba3.pyproj
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TestProject", "TestProject\TestProject.pyproj", "{93DC0F24-4401-443D-BF6E-027752EF3B88}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "UiDbManager", "UiDbManager\UiDbManager.pyproj", "{D79CF134-764B-4EE5-A292-92B34345E991}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,8 @@ Global
 		{B22099D2-7348-4FD4-B18E-13357BBE3595}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93DC0F24-4401-443D-BF6E-027752EF3B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93DC0F24-4401-443D-BF6E-027752EF3B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79CF134-764B-4EE5-A292-92B34345E991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79CF134-764B-4EE5-A292-92B34345E991}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
