@@ -74,8 +74,7 @@ class CrewDAO(BaseDAO.BaseDAO):
                 'WHERE CrewId = ?;'
         filled_query = query.format(worker1 = crew.worker1,
                                     worker2 = crew.worker2,
-                                    worker3 = crew.worker3,
-                                    workerId = crew.workerId)
+                                    worker3 = crew.worker3)
         connection = sqlite3.connect(self._dbname)
         connection.execute(filled_query, crew.crewId)
         connection.commit()

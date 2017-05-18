@@ -1,23 +1,23 @@
 class PlaneType(object):
      def __init__(self):
-        self._crewId = None
+        self._planeTypeId = None
         self._name = None
         self._assignment = None
         self._restriction = None  
 
      @property
-     def crewId(self):
+     def planeTypeId(self):
          """Crew Id - ідентифікатор екіпажу"""
-         return self._crewId
+         return self._planeTypeId
 
-     @crewId.setter
-     def crewId(self, value):
-         self._crewId = value
+     @planeTypeId.setter
+     def planeTypeId(self, value):
+         self._planeTypeId = value
          return
 
-     @crewId.deleter
-     def crewId(self):
-         del self._crewId
+     @planeTypeId.deleter
+     def planeTypeId(self):
+         del self._planeTypeId
          return
 
      @property
