@@ -5,7 +5,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b22099d2-7348-4fd4-b18e-13357bbe3595</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Laba3.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -55,7 +56,7 @@
     <Compile Include="Data\Manager.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Data\UnitOfWork.py">
+    <Compile Include="Data\UnitOfWorkMain.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Concrete\Crew.py">
@@ -79,14 +80,34 @@
     <Compile Include="Concrete\Worker.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Laba3.py" />
+    <Compile Include="UnitOfWork\CrewUOW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitOfWork\PlaneTypeUOW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitOfWork\PlaneUOW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitOfWork\PositionUOW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitOfWork\RaceUOW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitOfWork\TicketUOW.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitOfWork\WorkerUOW.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstracts\" />
     <Folder Include="Concrete\" />
     <Folder Include="Data\" />
     <Folder Include="DAO\" />
-    <Folder Include="Tests\" />
+    <Folder Include="UnitOfWork\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

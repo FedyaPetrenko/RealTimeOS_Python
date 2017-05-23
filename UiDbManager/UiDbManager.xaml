@@ -1,6 +1,131 @@
 ﻿<Window 
        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-       Title="UiDbManager" Height="600" Width="1000"> 
-       <Grid></Grid>
+        Title="Airport Manager"
+        MinHeight="400"
+        MinWidth="900"
+        WindowStartupLocation="CenterScreen"
+        ShowInTaskbar="True"
+        SizeToContent="WidthAndHeight"
+        Topmost="True"
+        ResizeMode="CanResize"
+        Background="Orange">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <DataGrid
+            Margin="10"
+            Height="auto"
+            VerticalScrollBarVisibility="Auto"
+            CanUserReorderColumns="True"
+            CanUserResizeRows="False"
+            CanUserSortColumns="True"
+            Background="#FFEBEBFF"
+            BorderBrush="{x:Null}"
+            IsReadOnly="False"
+            IsEnabled="True"
+            RowBackground="White"
+            ItemsSource="{Binding Products}"
+            FontSize="18.667"
+            FontFamily="Times New Roman"
+            SelectionMode="Single"
+            AutoGenerateColumns="False"
+            MaxColumnWidth="300"
+            SelectedItem="{Binding SelectedProduct}"
+            ToolTip="Click to change data">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ProductId}"
+                                    ClipboardContentBinding="{x:Null}"
+                                    Foreground="Black"
+                                    FontFamily="Source Code Pro Semibold"
+                                    Header="PositionId"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Name}"
+                                    ClipboardContentBinding="{x:Null}"
+                                    FontFamily="Source Code Pro Semibold"
+                                    Header="Name" />
+                <DataGridTextColumn Binding="{Binding Description}"
+                                    ClipboardContentBinding="{x:Null}"
+                                    FontFamily="Segoe Print"
+                                    Header="Salary" />
+                <DataGridTextColumn Binding="{Binding Price}"
+                                    ClipboardContentBinding="{x:Null}"
+                                    FontFamily="Source Code Pro Semibold"
+                                    Header="Duties" />
+                <DataGridTextColumn Binding="{Binding Count}"
+                                    ClipboardContentBinding="{x:Null}"
+                                    FontFamily="Source Code Pro Semibold"
+                                    Header="Requirements" />                
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="1"
+                    Grid.Column="0"
+                    Orientation="Horizontal">
+
+            <Button Content="Add position"
+                    HorizontalAlignment="Left"
+                    Margin="10,0,10,10"
+                    Width="auto"
+                    Height="39"
+                    MinWidth="150"
+                    MinHeight="35"
+                    Click="onAddPositionClick"
+                    VerticalAlignment="Bottom" />
+
+            <Button Content="Delete"
+                    HorizontalAlignment="Left"
+                    Margin="10,0,10,10"
+                    Width="auto"
+                    Height="auto"
+                    MinWidth="100"
+                    MinHeight="35"
+                    Command="{Binding DeleteProductCommand}" />
+
+            <Button Content="Refresh"
+                    HorizontalAlignment="Left"
+                    Margin="10,0,10,10"
+                    Width="auto"
+                    Height="auto"
+                    MinWidth="100"
+                    MinHeight="35"
+                    Command="{Binding RefreshTableWithProductsCommand}" />
+
+            <Button Content="Save changes"
+                    HorizontalAlignment="Left"
+                    Margin="10,0,10,10"
+                    Width="auto"
+                    Height="auto"
+                    MinWidth="100"
+                    MinHeight="35"
+                    Command="{Binding SaveChangesInProductTableCommand}" />
+
+            <TextBox Width="170"
+                     HorizontalAlignment="Right"
+                     FontSize="20"
+                     Margin="90,3,0,13"
+                     Text="{Binding ProductToFind}"
+                     ToolTip="Enter name of product" />
+
+            <Button HorizontalAlignment="Right"
+                    Margin="0,0,0,10"
+                    Width="auto"
+                    Height="auto" 
+                    Background="{x:Null}" 
+                    BorderBrush="{x:Null}"
+                    Command="{Binding FindProductCommand}">
+                <Image Source="../Images/find.png"
+                       Width="27" 
+                       ToolTip="Enter name of product to near field" />
+            </Button>
+        </StackPanel>
+    </Grid>
 </Window> 

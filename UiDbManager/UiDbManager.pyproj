@@ -26,9 +26,23 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AddNewPosition.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="UiDbManager.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddNewPosition.xaml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Images\BigPlus.jpg" />
+    <Content Include="Images\big_icon.png" />
+    <Content Include="Images\find.png" />
+    <Content Include="Images\information.png" />
+    <Content Include="Images\Menu-button2.png" />
+    <Content Include="Images\plus.png" />
+    <Content Include="Images\PNG.png" />
+    <Content Include="Images\restaurant.jpg" />
     <Content Include="UiDbManager.xaml">
       <SubType>Designer</SubType>
     </Content>
@@ -61,6 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

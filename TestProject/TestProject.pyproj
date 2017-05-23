@@ -5,9 +5,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>93dc0f24-4401-443d-bf6e-027752ef3b88</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TestProject.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <StartupFile>TestPosition.py</StartupFile>
+    <SearchPath>..\Laba3\DAO\;..\Laba3\Data\;..\Laba3\Concrete\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>TestProject</Name>
@@ -22,7 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="TestProject.py" />
+    <Compile Include="TestPosition.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Laba3\Laba3.pyproj">
+      <Name>Laba3</Name>
+      <Project>{b22099d2-7348-4fd4-b18e-13357bbe3595}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
